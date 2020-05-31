@@ -21,6 +21,7 @@ class UsersController < ApplicationController
       # 保存の成功をここで扱う。
       # succuss (valid params)
       # GET '/users/#{@user.id}' 
+      log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
  
